@@ -20,13 +20,13 @@ class Weather
   
   # location is a lat lon string like '51.5229965,-0.08712990000003629'
   # address is a string describing the address
-  # scale is 'celsius' or 'farenheit'.
+  # scale is 'celsius' or 'fahrenheit'.
   def self.fetch_data location, address, scale, is_test=false
     return SAMPLE_DATA if is_test
 
     latlon = location.split(',')
     params = {units: 'uk'} # temp in C, rain levels in mm, speed in mph
-    if scale == 'farenheit'
+    if scale == 'fahrenheit'
       params[:units] = 'us' # temp in F, rain levels in inches, speed in mph
     end
 
