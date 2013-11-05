@@ -1,4 +1,4 @@
-# Little Printer Weather
+# Daily Weather
 
 A Little Printer publication which outputs a daily weather forecast. 
 
